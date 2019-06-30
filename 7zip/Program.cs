@@ -1,10 +1,5 @@
 ﻿using System;
-using System.IO.Compression;
-using System.IO;
-using Spire.Pdf;
-using Spire.Doc;
-using Spire.Xls;
-using System.Drawing;
+
 
 /*
  * Created by Liviu Chile (2019-06-30) 
@@ -23,14 +18,19 @@ namespace _7zip
         {
             //1.1 problem
             Zip.SevenZip();
-
-            //1.2 problem
-            //MergePDF.pdf();
-
+            Console.WriteLine("Press any key to go to next problem");
+            Console.ReadKey();
             //1.3 problem
             CopyFiles.copyFiles();
+            Console.WriteLine("Press any key to go to next problem");
+            Console.ReadKey();
+            //1.2 problem
+            MergePDF.pdf();
+            Console.WriteLine("This was the last problem! Thank you");
+            Console.ReadKey();
 
-           // problem 2
+
+            // problem 2
         }
     }
 }
