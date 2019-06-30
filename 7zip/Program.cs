@@ -25,7 +25,7 @@ namespace _7zip
             Zip.SevenZip();
 
             //1.2 problem
-            MergePDF.pdf();
+            //MergePDF.pdf();
 
             //1.3 problem
             CopyFiles.copyFiles();
